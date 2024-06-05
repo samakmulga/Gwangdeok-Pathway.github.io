@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>광덕고길찾기</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="floor" id="floor-5">
+        <h2>5층</h2>
+        <div class="grid-container">
+            <div class="room a">과학실</div>
+            <div class="room b">과학준비실</div>
+            <div class="room c">과학 2실</div>
+            <div class="room d">과학 3실</div>
+            <div class="room e">자연과학정보부</div>
+            <div class="room f">컴퓨터실</div>
+            <div class="room g">휴게실상담실</div>
+            <div class="room h">화장실(남)</div>
+            <div class="room i">화장실(여)</div>
+            <div class="room j">양치대</div>
+            <div class="room k">산유관</div>
+            <div class="room l">3-1</div>
+            <div class="room m">3-2</div>
+            <div class="room n">3-3</div>
+            <div class="room o">3-4</div>
+            <div class="room p">3-5</div>
+            <div class="room m">3-6</div>
+            <div class="room n">3-7</div>
+            <div class="room o">3-8</div>
+            <div class="room p">3-9</div>
+            <div class="room q">3-10</div>
+        </div>
+    </div>
+
+    <div class="floor" id="floor-4">
+        <h2>4층</h2>
+        <div class="grid-container">
+            <div class="room a">기술실</div>
+            <div class="room b">기술준비실</div>
+            <div class="room c">미술실</div>
+            <div class="room d">유개실상담실</div>
+            <div class="room e">가사실</div>
+            <div class="room f">화장실(남)</div>
+            <div class="room g">화장실(여)</div>
+            <div class="room h">양치대</div>
+            <div class="room i">한문실</div>
+            <div class="room j">자기주도학습실</div>
+            <div class="room k">2학년교육실</div>
+            <div class="room l">예술실</div>
+            <div class="room m">2-1</div>
+            <div class="room n">2-2</div>
+            <div class="room o">2-3</div>
+            <div class="room m">2-4</div>
+            <div class="room n">2-5</div>
+            <div class="room o">2-6</div>
+            <div class="room m">2-7</div>
+            <div class="room n">2-8</div>
+            <div class="room o">2-9</div>
+            <div class="room o">2-10</div>
+        </div>
+    </div>
+
+    <div class="floor" id="floor-3">
+        <h2>3층</h2>
+        <div class="grid-container">
+            <div class="room a">도서관</div>
+            <div class="room b">협동학습실</div>
+            <div class="room c">운영위원실</div>
+            <div class="room d">학생위원실</div>
+            <div class="room e">교사휴게실</div>
+            <div class="room f">방송실</div>
+            <div class="room g">화장실(남)</div>
+            <div class="room h">화장실(여)</div>
+            <div class="room i">양치대</div>
+            <div class="room j">동아리1실</div>
+            <div class="room k">동아리2실</div>
+            <div class="room l">따라누리실</div>
+            <div class="room m">위클래스</div>
+            <div class="room n">진로진학상담부</div>
+            <div class="room m">1-1</div>
+            <div class="room n">1-2</div>
+            <div class="room o">1-3</div>
+            <div class="room m">1-4</div>
+            <div class="room n">1-5</div>
+            <div class="room o">1-6</div>
+            <div class="room m">1-7</div>
+            <div class="room n">1-8</div>
+            <div class="room o">1-9</div>
+            <div class="room o">1-10</div>
+        </div>
+    </div>
+
+    <div class="floor" id="floor-2">
+        <h2>2층</h2>
+        <div class="grid-container">
+            <div class="room a">체육기구실</div>
+            <div class="room b">체육교사실</div>
+            <div class="room c">무대</div>
+            <div class="room d">보건실</div>
+            <div class="room e">운동실</div>
+            <div class="room f">숙직실</div>
+            <div class="room g">방과후실</div>
+            <div class="room h">화장실(남)</div>
+            <div class="room i">화장실(여)</div>
+            <div class="room j">양치대</div>
+            <div class="room k">부출입구</div>
+            <div class="room l">시청각실 입구</div>
+            <div class="room m">계단</div>
+        </div>
+    </div>
+
+    <div class="floor" id="floor-1">
+        <h2>1층</h2>
+        <div class="grid-container">
+            <div class="room a">주출입구</div>
+            <div class="room b">식당</div>
+            <div class="room c">세탁실</div>
+            <div class="room d">화장실(남)</div>
+            <div class="room e">화장실(여)</div>
+            <div class="room f">계단</div>
+        </div>
+    </div>
+</body>
+<style>
+    body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-color: #f5f5f5;
+}
+
+.floor {
+    background-color: white;
+    border: 1px solid #ddd;
+    margin-bottom: 20px;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.floor h2 {
+    margin-top: 0;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    gap: 10px;
+}
+
+.room {
+    background-color: #e0e0e0;
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: center;
+}
+
+#floor-5 .a { grid-column: 1 / span 2; grid-row: 1; }
+#floor-5 .b { grid-column: 3 / span 2; grid-row: 1; }
+#floor-5 .c { grid-column: 5 / span 2; grid-row: 1; }
+#floor-5 .d { grid-column: 7 / span 2; grid-row: 1; }
+#floor-5 .e { grid-column: 9 / span 2; grid-row: 1; }
+#floor-5 .f { grid-column: 1 / span 2; grid-row: 2; }
+#floor-5 .g { grid-column: 3 / span 2; grid-row: 2; }
+#floor-5 .h { grid-column: 5 / span 1; grid-row: 2; }
+#floor-5 .i { grid-column: 6 / span 1; grid-row: 2; }
+#floor-5 .j { grid-column: 7 / span 2; grid-row: 2; }
+#floor-5 .k { grid-column: 9 / span 2; grid-row: 2; }
+#floor-5 .l { grid-column: 1 / span 1; grid-row: 3; }
+#floor-5 .m { grid-column: 2 / span 1; grid-row: 3; }
+#floor-5 .n { grid-column: 3 / span 1; grid-row: 3; }
+#floor-5 .o { grid-column: 4 / span 1; grid-row: 3; }
+#floor-5 .p { grid-column: 5 / span 1; grid-row: 3; }
+#floor-5 .q { grid-column: 6 / span 1; grid-row: 3; }
+
+/* Define similar grid areas for other floors */
+/* Repeat the process for other floors */
+
+#floor-4 .a { grid-column: 1 / span 2; grid-row: 1; }
+#floor-4 .b { grid-column: 3 / span 2; grid-row: 1; }
+#floor-4 .c { grid-column: 5 / span 2; grid-row: 1; }
+#floor-4 .d { grid-column: 7 / span 2; grid-row: 1; }
+#floor-4 .e { grid-column: 9 / span 2; grid-row: 1; }
+#floor-4 .f { grid-column: 1 / span 2; grid-row: 2; }
+#floor-4 .g { grid-column: 3 / span 2; grid-row: 2; }
+#floor-4 .h { grid-column: 5 / span 1; grid-row: 2; }
+#floor-4 .i { grid-column: 6 / span 1; grid-row: 2; }
+#floor-4 .j { grid-column: 7 / span 2; grid-row: 2; }
+#floor-4 .k { grid-column: 9 / span 2; grid-row: 2; }
+#floor-4 .l { grid-column: 1 / span 1; grid-row: 3; }
+#floor-4 .m { grid-column: 2 / span 1; grid-row: 3; }
+#floor-4 .n { grid-column: 3 / span 1; grid-row: 3; }
+#floor-4 .o { grid-column: 4 / span 1; grid-row: 3; }
+
+/* Repeat similar grid area definitions for other floors */
+
+#floor-3 .a { grid-column: 1 / span 2; grid-row: 1; }
+#floor-3 .b { grid-column: 3 / span 2; grid-row: 1; }
+#floor-3 .c { grid-column: 5 / span 2; grid-row: 1; }
+#floor-3 .d { grid-column: 7 / span 2; grid-row: 1; }
+#floor-3 .e { grid-column: 9 / span 2; grid-row: 1; }
+#floor-3 .f { grid-column: 1 / span 2; grid-row: 2; }
+#floor-3 .g { grid-column: 3 / span 2; grid-row: 2; }
+#floor-3 .h { grid-column: 5 / span 1; grid-row: 2; }
+#floor-3 .i { grid-column: 6 / span 1; grid-row: 2; }
+#floor-3 .j { grid-column: 7 / span 2; grid-row: 2; }
+#floor-3 .k { grid-column: 9 / span 2; grid-row: 2; }
+#floor-3 .l { grid-column: 1 / span 1; grid-row: 3; }
+#floor-3 .m { grid-column: 2 / span 1; grid-row: 3; }
+#floor-3 .n { grid-column: 3 / span 1; grid-row: 3; }
+
+/* Repeat similar grid area definitions for other floors */
+
+#floor-2 .a { grid-column: 1 / span 2; grid-row: 1; }
+#floor-2 .b { grid-column: 3 / span 2; grid-row: 1; }
+#floor-2 .c { grid-column: 5 / span 2; grid-row: 1; }
+#floor-2 .d { grid-column: 7 / span 2; grid-row: 1; }
+#floor-2 .e { grid-column: 9 / span 2; grid-row: 1; }
+#floor-2 .f { grid-column: 1 / span 2; grid-row: 2; }
+#floor-2 .g { grid-column: 3 / span 2; grid-row: 2; }
+#floor-2 .h { grid-column: 5 / span 1; grid-row: 2; }
+#floor-2 .i { grid-column: 6 / span 1; grid-row: 2; }
+#floor-2 .j { grid-column: 7 / span 2; grid-row: 2; }
+#floor-2 .k { grid-column: 9 / span 2; grid-row: 2; }
+#floor-2 .l { grid-column: 1 / span 1; grid-row: 3; }
+#floor-2 .m { grid-column: 2 / span 1; grid-row: 3; }
+
+/* Repeat similar grid area definitions for other floors */
+
+#floor-1 .a { grid-column: 1 / span 2; grid-row: 1; }
+#floor-1 .b { grid-column: 3 / span 2; grid-row: 1; }
+#floor-1 .c { grid-column: 5 / span 2; grid-row: 1; }
+#floor-1 .d { grid-column: 7 / span 2; grid-row: 1; }
+#floor-1 .e { grid-column: 9 / span 2; grid-row: 1; }
+#floor-1 .f { grid-column: 1 / span 2; grid-row: 2; }
+#floor-1 .g { grid-column: 3 / span 2; grid-row: 2; }
+#floor-1 .h { grid-column: 5 / span 1; grid-row: 2; }
+#floor-1 .i { grid-column: 6 / span 1; grid-row: 2; }
+#floor-1 .j { grid-column: 7 / span 2; grid-row: 2; }
+
+/* Repeat similar grid area definitions for other floors */
+</style>
+</html>
